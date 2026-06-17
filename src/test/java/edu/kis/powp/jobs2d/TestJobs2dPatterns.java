@@ -38,6 +38,10 @@ public class TestJobs2dPatterns {
 			FigureFactory.createRectangle(0, 0, 100, 50)
 					.execute(DriverFeature.getDriverManager().getCurrentDriver());
 		});
+		application.addTest("Triangle", (ActionEvent e) -> {
+			FigureFactory.createTriangle(0, 0, 100)
+					.execute(DriverFeature.getDriverManager().getCurrentDriver());
+		});
 	}
 
 	/**
